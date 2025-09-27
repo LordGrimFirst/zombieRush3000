@@ -33,15 +33,22 @@ public class EnemySpawner : MonoBehaviour
             return;
         }
 
-        Vector3 playerPosition = player.transform.position; // Position des Spielers
+        Vector3 playerPosition = player.transform.position;
 
         for (int i = 0; i < numberOfEntities; i++)
         {
-            float angle = i * Mathf.PI * 2 / numberOfEntities; // Berechnung des Winkels
-            // Generiere einen zuf�lligen Radius zwischen minRadius und maxRadius
+            // Pick a random angle in radians (0 to 2π)
+            float angle = Random.Range(0f, Mathf.PI * 2f);
+
+            // Pick a random radius between min and max
             float radius = Random.Range(minRadius, maxRadius);
-            Vector3 spawnPosition = playerPosition + new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0) * radius; // Berechnung der Position
-            Instantiate(entityPrefab, spawnPosition, Quaternion.identity); // Entity spawnen
+
+            // Convert polar coordinates → cartesian
+            Vector3 spawnPosition = playerPosition + new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0) * radius;
+
+            // Spawn enemy
+            Instantiate(entityPrefab, spawnPosition, Quaternion.identity);
         }
     }
+
 }

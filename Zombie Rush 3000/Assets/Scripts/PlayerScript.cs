@@ -43,7 +43,7 @@ public class PlayerScript : MonoBehaviour
             
         if (cooldownTimer >= 0)
         {
-            cooldownTimer -= Time.fixedDeltaTime;
+            cooldownTimer -= Time.deltaTime;
         }
         // Get WASD or arrow key input
         movement = Vector2.zero;
