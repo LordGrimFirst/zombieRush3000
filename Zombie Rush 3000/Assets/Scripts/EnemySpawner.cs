@@ -18,7 +18,7 @@ public class EnemySpawner : MonoBehaviour
     private void Update()
     {
         i++;
-        if (i > 1000)
+        if (i > 2000)
         {
             SpawnEntitiesInCircle();
             i = 0;

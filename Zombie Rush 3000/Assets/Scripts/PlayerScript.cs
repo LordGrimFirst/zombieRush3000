@@ -8,7 +8,7 @@ public class PlayerScript : MonoBehaviour
     private Vector2 movement;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Camera cam;
-    [SerializeField] public Animator animator;
+    [SerializeField] private Animator animator;
     private float MovementSpeed = 4;
     private Vector2 lastMovement = Vector2.zero;
     [SerializeField] private float DashDistance = 8f;
@@ -34,11 +34,6 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //test
-        playerHP = Random.Range(1, 100);
-        playerXP = Random.Range(1, 100);
-
-
 
             
         if (cooldownTimer >= 0)

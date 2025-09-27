@@ -30,9 +30,9 @@ public class HotbarManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha4))
             UseAbility(3);
 
-        // Hotbarslot 5
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-            UseAbility(4);
+        // Hotbarslot space
+        if (Input.GetKeyDown(KeyCode.Space))
+            UseAbility(4); //Dsh in Player
     }
     void UseAbility(int slotIndex)
     {
