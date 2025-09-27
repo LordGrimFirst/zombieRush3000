@@ -4,16 +4,21 @@ using UnityEngine.UI;
 public class FloatinHPBar : MonoBehaviour
 {
     private Slider slider;
-    public int hp;
+    private int hp;
+    public PlayerScript player; // Referenz auf die PlayerScript-Komponente
 
     private void Start()
     {
         slider = GetComponent<Slider>();
-        //player = GetComponentInParent<>
+        player = FindFirstObjectByType<PlayerScript>(); // Sucht die PlayerScript-Komponente im Spiel
     }
     // Update is called once per frame
     void Update()
     {
-        slider.value = hp;
+        if (player != null)
+        {
+            int hp1 = player.playerHP;
+            slider.value = hp1;
+        }
     }
 }

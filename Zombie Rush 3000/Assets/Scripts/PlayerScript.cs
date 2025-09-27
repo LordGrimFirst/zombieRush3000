@@ -1,11 +1,14 @@
 using UnityEngine;
 
+
+//"//animator" mit animator ersetzen
+
 public class PlayerScript : MonoBehaviour
 {
     private Vector2 movement;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Camera cam;
-    [SerializeField] private Animator animator;
+    //[SerializeField] private //animator //animator;
     private float MovementSpeed = 4;
     private Vector2 lastMovement = Vector2.zero;
     [SerializeField] private float DashDistance = 8f;
@@ -16,6 +19,9 @@ public class PlayerScript : MonoBehaviour
     private float DashCooldown = 3f;
     private float cooldownTimer = 0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public int playerHP = 100;
+    public int playerXP = 0;
+
     void Start()
     {
         DashSpeed = DashDistance / DashDuration / 2;
@@ -38,38 +44,38 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             movement.y = 1f;
-            animator.SetBool("Up", true);
+            //animator.SetBool("Up", true);
         }
         else
         {
-            animator.SetBool("Up", false);
+            //animator.SetBool("Up", false);
         }
         if (Input.GetKey(KeyCode.S))
         {
             movement.y = -1f;
-            animator.SetBool("Down", true);
+            //animator.SetBool("Down", true);
         }
         else
         {
-            animator.SetBool("Down", false);
+            //animator.SetBool("Down", false);
         }
         if (Input.GetKey(KeyCode.A))
         {
             movement.x = -1f;
-            animator.SetBool("Left", true);
+            //animator.SetBool("Left", true);
         }
         else
         {
-            animator.SetBool("Left", false);
+            //animator.SetBool("Left", false);
         }
         if (Input.GetKey(KeyCode.D))
         {
             movement.x = 1f;
-            animator.SetBool("Right", true);
+            //animator.SetBool("Right", true);
         }
         else
         {
-            animator.SetBool("Right", false);
+            //animator.SetBool("Right", false);
         }
         movement = movement.normalized;
         if (Input.GetKeyDown(KeyCode.Space) && cooldownTimer <= 0f)
