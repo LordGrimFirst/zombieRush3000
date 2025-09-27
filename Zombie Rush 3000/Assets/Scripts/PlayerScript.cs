@@ -88,6 +88,11 @@ public class PlayerScript : MonoBehaviour
         {
             Debug.Log(Mathf.CeilToInt(cooldownTimer));
         }
+        void OnCollisionStay(Collision collisionInfo) {
+            if (collisionInfo.gameObject.name == "Enemy") {
+                print("Hit");
+        }
+    }
     }
     void FixedUpdate()
     {
