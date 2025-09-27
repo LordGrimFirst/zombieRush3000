@@ -16,7 +16,6 @@ public class MainMenue : MonoBehaviour
 
     public void StartGame()
     {
-        Debug.Log("Hallo ich habe das game gestartet");
         SceneManager.LoadScene("GameScene"); 
 
     }
