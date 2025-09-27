@@ -34,8 +34,6 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-            
         if (cooldownTimer >= 0)
         {
             cooldownTimer -= Time.deltaTime;
