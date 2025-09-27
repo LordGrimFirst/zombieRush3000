@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13966, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: julianBackup
+  m_EditorClassIdentifier: UnityEditor.dll::UnityEditor.SceneTemplate.SceneTemplateAsset
+  templateScene: {fileID: 102900000, guid: 8c4abf2d58423e749812856d983a036c, type: 3}
+  templateName: 
+  description: 
+  preview: {fileID: 0}
+  dependencies:
+  - dependency: {fileID: 9100000, guid: 355db04c9d4caef45857ea48abb63d93, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: 346fc63ee48a3b146ad4e1f8b5f65a51, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 276c96db3b6f0644aae34c874814436c, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: 95e6637809b57c84fac819021028b016, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: b8601063f52919d40ae32d60f7139908, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: dababf0d8336bf44bb055b2d581d13cf, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 7400000, guid: cdd63d68b519f704f98356681700e7c5, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 6d5a8d1b7603460478675cac3c5d0f71, type: 3}
+    instantiationMode: 0
+  templatePipeline: {fileID: 0}
+  badge: {fileID: 0}
+  addToDefaults: 0
