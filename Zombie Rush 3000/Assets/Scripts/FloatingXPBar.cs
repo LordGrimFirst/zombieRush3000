@@ -4,16 +4,19 @@ using UnityEngine.UI;
 public class FloatinXPBar : MonoBehaviour
 {
     private Slider slider;
-    public int xp;
+    public PlayerScript player; // Referenz auf die PlayerScript-Komponente
 
     private void Start()
     {
         slider = GetComponent<Slider>();
-        //player = GetComponentInParent<>
+        player = FindFirstObjectByType<PlayerScript>(); // Sucht die PlayerScript-Komponente im Spiel
     }
-    // Update is called once per frame
+
     void Update()
     {
-        slider.value = xp;
+        if (player != null)
+        {
+            slider.value = player.playerXP; // Zugriff auf die xp-Variable in PlayerScript
+        }
     }
 }
