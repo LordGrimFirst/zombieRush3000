@@ -291,7 +291,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   rb: {fileID: 355672905}
   cam: {fileID: 79646638}
-  animator: {fileID: 355672907}
   DashDistance: 5
   DashDuration: 0.2
 --- !u!212 &355672901
@@ -726,7 +725,6 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -769,7 +767,6 @@ CircleCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
